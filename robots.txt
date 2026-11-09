@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://leo-bot66.github.io/sitemap.xml
+Sitemap: https://gulliblerea.github.io/sitemap.xml
