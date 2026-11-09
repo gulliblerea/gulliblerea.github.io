@@ -8,7 +8,6 @@
 <meta name="keywords" content="小火箭共享账号,小火箭共享id,共享Apple ID,Shadowrocket下载,共享账号报错,Apple ID已锁定,美区Apple ID,独享Apple ID">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://gulliblerea.github.io/">
-<meta name="google-site-verification" content="VDo_6vQQj5qqhAy6e3MU8A09_-ynBvNzXpd8BNP8-Hk" />
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Newbee ID 资源索引｜小火箭共享账号、使用教程与苹果 ID 选购指南">
@@ -57,38 +56,158 @@
 
 <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
-        line-height: 1.75; color: #2b3038; background: #f5f7fa;
-        min-height: 100vh; padding: 24px 16px;
+    :root{
+      --ink:#0f172a; --ink2:#3d4657; --muted:#6b7688;
+      --line:#e6eaf1; --bg:#f5f7fa;
+      --brand:#2563eb; --hot:#ff4d1c;
     }
-    .wrap { max-width: 860px; margin: 0 auto; background: #fff; border-radius: 12px;
-            box-shadow: 0 2px 18px rgba(20,30,50,.08); padding: 38px 40px 46px; }
-    h1 { font-size: 1.85em; color: #2f5fd0; margin-bottom: 12px; line-height: 1.3; }
-    .lead { color: #5a6472; font-size: 1.02em; margin-bottom: 30px; padding-bottom: 20px; border-bottom: 2px solid #eef1f6; }
-    h2 { font-size: 1.32em; color: #2f5fd0; margin-top: 34px; margin-bottom: 14px;
-         border-left: 4px solid #2f5fd0; padding-left: 12px; }
-    h3 { font-size: 1.08em; color: #3d4652; margin: 22px 0 10px; }
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+                     'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+        line-height: 1.75; color: var(--ink2); background: var(--bg);
+        min-height: 100vh; padding: 28px 16px 60px;
+        -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 880px; margin: 0 auto; background: #fff; border-radius: 20px;
+            box-shadow: 0 4px 40px rgba(15,23,42,.08); padding: 44px 44px 52px; }
+
+    /* ── 顶部转化区 ─────────────────────────────── */
+    .hero { text-align: center; padding: 4px 0 32px; border-bottom: 2px solid var(--line); margin-bottom: 34px; }
+    .hero .kicker { display:inline-block; font-size: 12.5px; font-weight: 800; letter-spacing: .12em;
+                    color: var(--hot); background: #fff2ed; border: 1px solid #ffd9cc;
+                    padding: 5px 14px; border-radius: 999px; margin-bottom: 16px; }
+    h1 { font-size: 2.05em; line-height: 1.28; color: var(--ink); letter-spacing: -.02em;
+         margin-bottom: 14px; font-weight: 900; }
+    h1 em { font-style: normal; color: var(--hot); }
+    .hero-sub { font-size: 1.06em; color: var(--muted); margin-bottom: 30px; }
+    .hero-sub b { color: var(--ink); }
+
+    .btns { display: flex; flex-direction: column; gap: 14px; margin: 0 0 22px; }
+    .btn {
+        position: relative; display: flex; align-items: center; gap: 18px;
+        padding: 20px 24px; border-radius: 16px; text-decoration: none !important;
+        color: #fff !important; text-align: left; overflow: hidden;
+        transition: transform .16s ease, box-shadow .16s ease, filter .16s ease;
+        box-shadow: 0 10px 26px rgba(15,23,42,.16);
+    }
+    .btn:hover { transform: translateY(-3px); filter: saturate(1.06); text-decoration: none !important; }
+    .btn:active { transform: translateY(-1px); }
+    .btn .ico { width: 54px; height: 54px; flex-shrink: 0; border-radius: 15px;
+                display: flex; align-items: center; justify-content: center;
+                font-size: 26px; line-height: 1;
+                background: rgba(255,255,255,.20);
+                box-shadow: inset 0 1px 0 rgba(255,255,255,.25); }
+    .btn .txt { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+    .btn .t { font-size: 20px; font-weight: 900; letter-spacing: .01em; line-height: 1.2; }
+    .btn .s { font-size: 13px; opacity: .9; font-weight: 500; line-height: 1.45; }
+    .btn .arrow { margin-left: auto; font-size: 22px; opacity: .8; flex-shrink: 0; }
+
+    /* 主推：各区老号（付费，库存最广） */
+    .btn-shop { background: linear-gradient(135deg,#ff7a18 0%,#ff3d00 100%);
+                box-shadow: 0 12px 30px rgba(255,77,28,.34); }
+    .btn-shop::after { content:""; position:absolute; inset:0;
+                background: radial-gradient(120% 100% at 10% 0%, rgba(255,255,255,.22), transparent 60%); }
+    /* 次推：独享小火箭（客单价高） */
+    .btn-rocket { background: linear-gradient(135deg,#7c3aed 0%,#4338ca 100%);
+                  box-shadow: 0 12px 30px rgba(79,70,229,.30); }
+    /* 引流：免费共享（视觉权重刻意压低） */
+    .btn-free { background: #fff; color: #047857 !important; border: 2px solid #a7f3d0;
+                box-shadow: 0 4px 14px rgba(16,185,129,.12); }
+    .btn-free .ico { background: #ecfdf5; box-shadow: none; }
+    .btn-free .t { color: #047857; font-size: 17px; }
+    .btn-free .s { color: #059669; opacity: .85; }
+    .btn-free .arrow { color: #10b981; }
+    .btn .tag { position:absolute; top:10px; right:14px; font-size:10.5px; font-weight: 900;
+                letter-spacing:.06em; background: rgba(0,0,0,.22); color:#fff;
+                padding: 3px 9px; border-radius: 999px; }
+
+    .trust { display:flex; justify-content:center; flex-wrap:wrap; gap: 8px 20px;
+             list-style:none; margin: 0; font-size: 13px; color: var(--muted); font-weight: 600; }
+    .trust li { margin: 0; }
+
+    /* ── 正文 ─────────────────────────────────── */
+    .lead { color: var(--muted); font-size: .97em; line-height: 1.85; margin-bottom: 6px; }
+    h2 { font-size: 1.26em; color: var(--ink); margin-top: 36px; margin-bottom: 14px;
+         font-weight: 900; letter-spacing: -.01em; display: flex; align-items: center; gap: 9px; }
+    h2::before { content:""; width: 4px; height: 19px; border-radius: 3px;
+                 background: linear-gradient(180deg,#ff7a18,#ff3d00); flex-shrink: 0; }
+    h3 { font-size: 1.04em; color: var(--ink); margin: 22px 0 10px; font-weight: 800; }
     p { margin-bottom: 12px; }
-    ul, ol { margin: 8px 0 14px 22px; }
-    li { margin-bottom: 8px; }
-    a { color: #2f5fd0; text-decoration: none; font-weight: 500; }
+    ul, ol { margin: 8px 0 16px 22px; }
+    li { margin-bottom: 9px; }
+    a { color: var(--brand); text-decoration: none; font-weight: 600; }
     a:hover { text-decoration: underline; }
-    .card { background: #f8fafd; border: 1px solid #e6ecf5; border-radius: 8px;
-            padding: 16px 20px; margin: 18px 0; }
-    .card a { font-weight: 600; }
-    .note { background: #fff8e6; border-left: 4px solid #f0a92e; padding: 14px 18px;
-            border-radius: 6px; margin: 20px 0; color: #4a4235; }
-    .foot { margin-top: 38px; padding-top: 18px; border-top: 1px solid #eef1f6;
-            color: #8a929e; font-size: .9em; }
-    @media (max-width: 640px) { .wrap { padding: 26px 20px 32px; } h1 { font-size: 1.45em; } h2 { font-size: 1.15em; } }
+    .card { background: #f8fafc; border: 1px solid var(--line); border-radius: 12px;
+            padding: 18px 22px; margin: 18px 0; }
+    .note { background: #fffbeb; border-left: 4px solid #f59e0b; padding: 15px 20px;
+            border-radius: 8px; margin: 22px 0; color: #78500f; font-size: .95em; }
+    .foot { margin-top: 42px; padding-top: 20px; border-top: 1px solid var(--line);
+            color: #97a0af; font-size: .86em; line-height: 1.9; }
+
+    @media (max-width: 640px) {
+        body { padding: 12px 10px 40px; }
+        .wrap { padding: 26px 16px 34px; border-radius: 16px; }
+        h1 { font-size: 1.46em; }
+        .hero-sub { font-size: .95em; margin-bottom: 22px; }
+        .hero { padding-bottom: 26px; margin-bottom: 28px; }
+        .btn { padding: 15px; gap: 12px; border-radius: 14px; }
+        .btn .ico { width: 44px; height: 44px; font-size: 21px; border-radius: 12px; }
+        .btn .t { font-size: 17px; }
+        .btn .s { font-size: 11.5px; }
+        .btn .arrow { display: none; }
+        .btn .tag { top: 8px; right: 10px; font-size: 10px; padding: 2px 7px; }
+        .btn-free .t { font-size: 15px; }
+        .trust { font-size: 12px; gap: 6px 12px; }
+        h2 { font-size: 1.12em; margin-top: 30px; }
+    }
 </style>
 </head>
 <body>
 <div class="wrap">
 
-<h1>Newbee ID 资源索引</h1>
-<p class="lead">本页汇总小火箭（Shadowrocket）<strong>共享 Apple ID</strong>与外区 Apple ID 购买相关的全部入口与指南。所有条目都指向长期实时维护的站点，不是静态文档——账号状态、密码可用性、区域库存均以实际页面显示为准。</p>
+<div class="hero">
+  <span class="kicker">现货直发 · 一件也是批发价</span>
+  <h1>小火箭 ID 与各区 Apple ID<br><em>现货直达</em></h1>
+  <p class="hero-sub">八区现货：美 · 港 · 台 · 日 · 韩 · 土 · 加 · 菲<br><b>自动发货 · 库存实时 · 异常补发</b></p>
+
+  <div class="btns">
+    <a class="btn btn-shop" href="https://nbid666.com/products">
+      <span class="tag">最全</span>
+      <span class="ico">🛒</span>
+      <span class="txt">
+        <span class="t">各区老号现货</span>
+        <span class="s">美港台日韩土加菲 · 可转区 · 带密保</span>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+    <a class="btn btn-rocket" href="https://nbid666.com/products/upstream-1-6-1787508489116">
+      <span class="tag">已购小火箭</span>
+      <span class="ico">🔑</span>
+      <span class="txt">
+        <span class="t">独享小火箭成品号</span>
+        <span class="s">自带小火箭 · 仅你一人用 · 可改密</span>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+    <a class="btn btn-free" href="https://id.tangping.icu/">
+      <span class="ico">🎁</span>
+      <span class="txt">
+        <span class="t">免费共享取号（不花钱）</span>
+        <span class="s">多人共用 · 登不上就换</span>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+  </div>
+
+  <ul class="trust">
+    <li>✅ 付款秒发</li>
+    <li>✅ 库存实时</li>
+    <li>✅ 异常补发</li>
+    <li>✅ 一件也是批发价</li>
+  </ul>
+</div>
+
+<p class="lead">本页汇总小火箭（Shadowrocket）<strong>共享 Apple ID</strong> 与外区 Apple ID 购买相关的全部入口与指南。所有条目都指向长期实时维护的站点，不是静态文档——账号状态、密码可用性、区域库存均以实际页面显示为准。</p>
 
 <h2>一、共享 Apple ID 实时获取</h2>
 <div class="card">
