@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>小火箭账号购买指南 2026｜三种买法成本对比与验号清单 - Newbee ID</title>
+<meta name="description" content="小火箭（Shadowrocket）国区买不到。自己注册美区号、买已购成品号、用免费共享号，三种买法的现金成本、时间成本与稳定性对比，附买后验号清单与四个常见报错处理。">
+<meta name="keywords" content="小火箭账号购买,小火箭id购买,Shadowrocket账号,小火箭成品号,美区Apple ID,共享小火箭">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://gulliblerea.github.io/shadowrocket-account/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="小火箭账号购买指南 2026｜三种买法成本对比与验号清单 - Newbee ID">
+<meta property="og:description" content="小火箭（Shadowrocket）国区买不到。自己注册美区号、买已购成品号、用免费共享号，三种买法的现金成本、时间成本与稳定性对比，附买后验号清单与四个常见报错处理。">
+<meta property="og:url" content="https://gulliblerea.github.io/shadowrocket-account/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Newbee ID 资源索引｜小火箭共享账号、使用教程与苹果 ID 选购指南",
+  "description": "汇总小火箭共享 Apple ID 获取入口、使用教程、报错排查、安全指南与独享 Apple ID 选购指南的资源索引页。",
+  "url": "https://gulliblerea.github.io/",
+  "inLanguage": "zh-CN",
+  "about": [
+    {"@type":"Thing","name":"小火箭共享账号"},
+    {"@type":"Thing","name":"共享 Apple ID"},
+    {"@type":"Thing","name":"Shadowrocket"},
+    {"@type":"Thing","name":"Apple ID"}
+  ],
+  "mentions": [
+    {"@type":"WebSite","name":"id.tangping.icu","url":"https://id.tangping.icu/"},
+    {"@type":"WebSite","name":"nbid666.com","url":"https://nbid666.com/"},
+    {"@type":"WebSite","name":"newbee567.top","url":"https://newbee567.top/"},
+    {"@type":"WebSite","name":"nb.tangping.icu","url":"https://nb.tangping.icu/"}
+  ],
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "Newbee ID 相关资源",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"小火箭共享账号实时获取（id.tangping.icu）","url":"https://id.tangping.icu/"},
+      {"@type":"ListItem","position":2,"name":"共享 Apple ID 完整使用教程","url":"https://id.tangping.icu/guide"},
+      {"@type":"ListItem","position":3,"name":"共享 Apple ID 报错排查手册","url":"https://gulliblerea.github.io/-id-/troubleshoot/"},
+      {"@type":"ListItem","position":4,"name":"共享 Apple ID 安全使用指南","url":"https://gulliblerea.github.io/-id-/safe/"},
+      {"@type":"ListItem","position":5,"name":"Quantumult X / Stash 下载指南","url":"https://gulliblerea.github.io/-id-/clients/"},
+      {"@type":"ListItem","position":6,"name":"独享 Apple ID 商城（nbid666.com）","url":"https://nbid666.com/"},
+      {"@type":"ListItem","position":7,"name":"机场官网入口","url":"https://nb.tangping.icu/"},
+      {"@type":"ListItem","position":8,"name":"苹果 ID 购买指南（区号/后缀/成品号）","url":"https://newbee567.top/guides/apple-id-price-guide/"},
+      {"@type":"ListItem","position":9,"name":"小火箭多少钱：三种获取方式的真实成本","url":"https://gulliblerea.github.io/-id-/shadowrocket-price/"},
+      {"@type":"ListItem","position":10,"name":"用共享 ID 会被看到照片吗","url":"https://gulliblerea.github.io/-id-/apple-id-privacy/"},
+      {"@type":"ListItem","position":11,"name":"共享 ID 登录 iCloud 的锁机原理","url":"https://gulliblerea.github.io/-id-/icloud-login-risk/"}
+    ]
+  }
+}
+</script>
+
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root{
+      --ink:#0f172a; --ink2:#3d4657; --muted:#6b7688;
+      --line:#e6eaf1; --bg:#f5f7fa;
+      --brand:#2563eb; --hot:#ff4d1c;
+    }
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+                     'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+        line-height: 1.75; color: var(--ink2); background: var(--bg);
+        min-height: 100vh; padding: 28px 16px 60px;
+        -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 880px; margin: 0 auto; background: #fff; border-radius: 20px;
+            box-shadow: 0 4px 40px rgba(15,23,42,.08); padding: 44px 44px 52px; }
+
+    /* ── 顶部转化区 ─────────────────────────────── */
+    .hero { text-align: center; padding: 4px 0 32px; border-bottom: 2px solid var(--line); margin-bottom: 34px; }
+    .hero .kicker { display:inline-block; font-size: 12.5px; font-weight: 800; letter-spacing: .12em;
+                    color: var(--hot); background: #fff2ed; border: 1px solid #ffd9cc;
+                    padding: 5px 14px; border-radius: 999px; margin-bottom: 16px; }
+    h1 { font-size: 2.05em; line-height: 1.28; color: var(--ink); letter-spacing: -.02em;
+         margin-bottom: 14px; font-weight: 900; }
+    h1 em { font-style: normal; color: var(--hot); }
+    .hero-sub { font-size: 1.06em; color: var(--muted); margin-bottom: 30px; }
+    .hero-sub b { color: var(--ink); }
+
+    .btns { display: flex; flex-direction: column; gap: 14px; margin: 0 0 22px; }
+    .btn {
+        position: relative; display: flex; align-items: center; gap: 18px;
+        padding: 20px 24px; border-radius: 16px; text-decoration: none !important;
+        color: #fff !important; text-align: left; overflow: hidden;
+        transition: transform .16s ease, box-shadow .16s ease, filter .16s ease;
+        box-shadow: 0 10px 26px rgba(15,23,42,.16);
+    }
+    .btn:hover { transform: translateY(-3px); filter: saturate(1.06); text-decoration: none !important; }
+    .btn:active { transform: translateY(-1px); }
+    .btn .ico { width: 54px; height: 54px; flex-shrink: 0; border-radius: 15px;
+                display: flex; align-items: center; justify-content: center;
+                font-size: 26px; line-height: 1;
+                background: rgba(255,255,255,.20);
+                box-shadow: inset 0 1px 0 rgba(255,255,255,.25); }
+    .btn .txt { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+    .btn .t { font-size: 20px; font-weight: 900; letter-spacing: .01em; line-height: 1.2; }
+    .btn .s { font-size: 13px; opacity: .9; font-weight: 500; line-height: 1.45; }
+    .btn .arrow { margin-left: auto; font-size: 22px; opacity: .8; flex-shrink: 0; }
+
+    /* 主推：各区老号（付费，库存最广） */
+    .btn-shop { background: linear-gradient(135deg,#ff7a18 0%,#ff3d00 100%);
+                box-shadow: 0 12px 30px rgba(255,77,28,.34); }
+    .btn-shop::after { content:""; position:absolute; inset:0;
+                background: radial-gradient(120% 100% at 10% 0%, rgba(255,255,255,.22), transparent 60%); }
+    /* 次推：独享小火箭（客单价高） */
+    .btn-rocket { background: linear-gradient(135deg,#7c3aed 0%,#4338ca 100%);
+                  box-shadow: 0 12px 30px rgba(79,70,229,.30); }
+    /* 引流：免费共享（视觉权重刻意压低） */
+    .btn-free { background: #fff; color: #047857 !important; border: 2px solid #a7f3d0;
+                box-shadow: 0 4px 14px rgba(16,185,129,.12); }
+    .btn-free .ico { background: #ecfdf5; box-shadow: none; }
+    .btn-free .t { color: #047857; font-size: 17px; }
+    .btn-free .s { color: #059669; opacity: .85; }
+    .btn-free .arrow { color: #10b981; }
+    .btn .tag { position:absolute; top:10px; right:14px; font-size:10.5px; font-weight: 900;
+                letter-spacing:.06em; background: rgba(0,0,0,.22); color:#fff;
+                padding: 3px 9px; border-radius: 999px; }
+
+    .trust { display:flex; justify-content:center; flex-wrap:wrap; gap: 8px 20px;
+             list-style:none; margin: 0; font-size: 13px; color: var(--muted); font-weight: 600; }
+    .trust li { margin: 0; }
+
+    /* ── 正文 ─────────────────────────────────── */
+    .lead { color: var(--muted); font-size: .97em; line-height: 1.85; margin-bottom: 6px; }
+    h2 { font-size: 1.26em; color: var(--ink); margin-top: 36px; margin-bottom: 14px;
+         font-weight: 900; letter-spacing: -.01em; display: flex; align-items: center; gap: 9px; }
+    h2::before { content:""; width: 4px; height: 19px; border-radius: 3px;
+                 background: linear-gradient(180deg,#ff7a18,#ff3d00); flex-shrink: 0; }
+    h3 { font-size: 1.04em; color: var(--ink); margin: 22px 0 10px; font-weight: 800; }
+    p { margin-bottom: 12px; }
+    ul, ol { margin: 8px 0 16px 22px; }
+    li { margin-bottom: 9px; }
+    a { color: var(--brand); text-decoration: none; font-weight: 600; }
+    a:hover { text-decoration: underline; }
+    .card { background: #f8fafc; border: 1px solid var(--line); border-radius: 12px;
+            padding: 18px 22px; margin: 18px 0; }
+    .note { background: #fffbeb; border-left: 4px solid #f59e0b; padding: 15px 20px;
+            border-radius: 8px; margin: 22px 0; color: #78500f; font-size: .95em; }
+    .foot { margin-top: 42px; padding-top: 20px; border-top: 1px solid var(--line);
+            color: #97a0af; font-size: .86em; line-height: 1.9; }
+
+    @media (max-width: 640px) {
+        body { padding: 12px 10px 40px; }
+        .wrap { padding: 26px 16px 34px; border-radius: 16px; }
+        h1 { font-size: 1.46em; }
+        .hero-sub { font-size: .95em; margin-bottom: 22px; }
+        .hero { padding-bottom: 26px; margin-bottom: 28px; }
+        .btn { padding: 15px; gap: 12px; border-radius: 14px; }
+        .btn .ico { width: 44px; height: 44px; font-size: 21px; border-radius: 12px; }
+        .btn .t { font-size: 17px; }
+        .btn .s { font-size: 11.5px; }
+        .btn .arrow { display: none; }
+        .btn .tag { top: 8px; right: 10px; font-size: 10px; padding: 2px 7px; }
+        .btn-free .t { font-size: 15px; }
+        .trust { font-size: 12px; gap: 6px 12px; }
+        h2 { font-size: 1.12em; margin-top: 30px; }
+    }
+</style>
+<style>
+    table { width:100%; border-collapse: collapse; margin: 14px 0 20px; font-size: .93em; }
+    th, td { border: 1px solid #dbe2ea; padding: 9px 12px; text-align: left; vertical-align: top; }
+    th { background: #f1f5f9; font-weight: 800; color: var(--ink); white-space: nowrap; }
+    tbody tr:nth-child(even) td { background: #fbfcfe; }
+    .faq dt { font-weight: 800; color: var(--ink); margin-top: 16px; }
+    .faq dd { margin: 4px 0 0; color: var(--muted); }
+    @media (max-width: 640px) { table { font-size: .86em; } th, td { padding: 7px 8px; } }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "name": "小火箭账号购买指南 2026｜三种买法成本对比与验号清单 - Newbee ID",
+   "description": "小火箭（Shadowrocket）国区买不到。自己注册美区号、买已购成品号、用免费共享号，三种买法的现金成本、时间成本与稳定性对比，附买后验号清单与四个常见报错处理。",
+   "url": "https://gulliblerea.github.io/shadowrocket-account/",
+   "inLanguage": "zh-CN",
+   "isPartOf": {
+    "@type": "WebSite",
+    "name": "Newbee ID 资源索引",
+    "url": "https://gulliblerea.github.io/"
+   }
+  },
+  {
+   "@type": "Article",
+   "headline": "小火箭账号购买指南 2026｜三种买法成本对比与验号清单 - Newbee ID",
+   "description": "小火箭（Shadowrocket）国区买不到。自己注册美区号、买已购成品号、用免费共享号，三种买法的现金成本、时间成本与稳定性对比，附买后验号清单与四个常见报错处理。",
+   "author": {
+    "@type": "Organization",
+    "name": "Newbee ID"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Newbee ID"
+   },
+   "datePublished": "2026-11-11",
+   "dateModified": "2026-11-11",
+   "mainEntityOfPage": "https://gulliblerea.github.io/shadowrocket-account/",
+   "inLanguage": "zh-CN"
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "小火箭多少钱？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "美区定价 2.99 美元（约 21 元）；国内成品号一般 20 元上下，差别主要在是否带密保、能否改密。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "买成品号会被找回吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "不带密保的号有被找回风险；带密保并第一时间改密改密保，可以把风险降到最低。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "成品号能更新小火箭吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "能，更新时重新登录该账号即可；号失效就卸载后从已购项目重装。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "共享号能下载小火箭吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "多数共享号已购，直接下载即可；但多人共用、密码会被轮换，随时可能失效。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "国区账号能买吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "不能，国区 App Store 已下架 Shadowrocket，必须用美区等外区账号。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "买了小火箭还需要什么？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "还需要节点订阅（机场）。小火箭只是客户端，没有订阅无法使用。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "买了不会用怎么办？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "先在 App Store 登录下载，再导入订阅链接；具体步骤见下方主站教程。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "批量买有优惠吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "有，主站标价即「一件也是批发价」，量大可联系客服谈阶梯价。"
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "首页",
+     "item": "https://gulliblerea.github.io/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "小火箭账号购买指南",
+     "item": "https://gulliblerea.github.io/shadowrocket-account/"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<div class="wrap">
+
+<div class="hero">
+  <span class="kicker">2026 版 · 按美区实价与实测流程整理</span>
+  <h1>小火箭账号购买指南<br><em>三种买法 · 成本 · 验号</em></h1>
+  <p class="hero-sub">先算清成本，再选买法，最后验号——少花冤枉钱</p>
+  <div class="btns">
+    <a class="btn btn-shop" href="https://nbid666.com/products/upstream-1-6-1787508489116">
+      <span class="tag">已购小火箭</span>
+      <span class="ico">🚀</span>
+      <span class="txt"><span class="t">成品独享号 ¥22 起</span><span class="s">带密保 · 可改密 · 自动发货</span></span>
+      <span class="arrow">→</span>
+    </a>
+    <a class="btn btn-free" href="https://id.tangping.icu/">
+      <span class="ico">🎁</span>
+      <span class="txt"><span class="t">免费共享号（0 元）</span><span class="s">临时下载一次用</span></span>
+      <span class="arrow">→</span>
+    </a>
+  </div>
+</div>
+
+<p class="lead">小火箭（Shadowrocket）是 iOS 上的付费代理客户端，美区 App Store 售价 <b>2.99 美元</b>，
+国区已经搜不到。所谓「买小火箭」，实际买的是两样东西：<b>一个能下载它的外区 Apple ID</b>，
+以及<b>这个账号里已经买过它</b>。这篇把三种买法的成本、风险和验号步骤讲清楚。</p>
+
+<h2>一、先搞清楚你买的是什么</h2>
+<ul>
+<li><b>小火箭本身</b>：一个付费 App，美区 2.99 美元买断，国区下架。</li>
+<li><b>外区账号</b>：美区 Apple ID，用来登录 App Store 下载它。</li>
+<li><b>节点订阅</b>：小火箭只是客户端，下载后还要有订阅（机场）才能用。</li>
+</ul>
+<p>很多人以为买了号就「能上网了」，其实还差订阅这一步；反过来，只买订阅没有小火箭也导入不了。</p>
+
+<h2>二、三种买法，成本差多少</h2>
+<table>
+<tr><th>买法</th><th>现金成本</th><th>时间成本</th><th>稳定性</th><th>适合</th></tr>
+<tr><td>自己注册美区号 + 自己买</td><td>约 21 元（$2.99）</td><td>高：外区网络、美国地址、礼品卡、防风控</td><td>最高，号完全属于自己</td><td>长期用、愿意折腾</td></tr>
+<tr><td>买「已购小火箭」成品号</td><td>约 20 元</td><td>低：下单即用</td><td>中高，看是否带密保</td><td>大多数人</td></tr>
+<tr><td>免费共享号</td><td>0 元</td><td>中：找号、换号、等密码</td><td>低，随时失效</td><td>临时下载一次</td></tr>
+</table>
+<p><b>结论</b>：临时用共享号够了；要长期用、要更新，成品号或自己注册更稳。
+成品号省下的时间通常比 20 元值钱，但一定要买<b>带密保</b>的。</p>
+
+<h2>三、买完成品号，按这个清单验</h2>
+<ol>
+<li><b>只在 App Store 登录</b>：App Store → 右上角头像 → 退出自己的号 → 登录新号。不要登「设置 → iCloud」。</li>
+<li><b>看已购项目</b>：App Store → 右上角头像 → 已购项目，确认 Shadowrocket 在列表里。</li>
+<li><b>点一次下载</b>：能正常开始下载，说明号确实买过，不是空号。</li>
+<li><b>改密码</b>：去 <a href="https://account.apple.com/" target="_blank" rel="noopener noreferrer nofollow">account.apple.com</a> 改成只有你知道的密码。</li>
+<li><b>改密保</b>：把三问答案改成自己的；改不了密的号，等于不完全属于你。</li>
+<li><b>保存发货信息</b>：账号、密码、密保、生日截图存好，后续找回要用。</li>
+</ol>
+
+<h2>四、四个最常见的报错</h2>
+<ul>
+<li><b>搜不到小火箭</b>：先确认登录的是美区账号（App Store 右上角会显示账号邮箱），国区搜不到。</li>
+<li><b>提示需要付费</b>：说明这个号没买过，或你登错了号；回「已购项目」确认。</li>
+<li><b>提示账户被禁用</b>：先卸载旧 App、退出账号，重新登录后再下载；仍不行联系卖家售后。</li>
+<li><b>一直转圈 / 无法连接 App Store</b>：换网络、重启 App Store，确认账号地区与系统语言。</li>
+</ul>
+
+<h2>五、常见问题</h2>
+<div class="faq"><dl>
+<dt>1. 小火箭多少钱？</dt><dd>美区定价 2.99 美元（约 21 元）；国内成品号一般 20 元上下，差别主要在是否带密保、能否改密。</dd>
+<dt>2. 买成品号会被找回吗？</dt><dd>不带密保的号有被找回风险；带密保并第一时间改密改密保，可以把风险降到最低。</dd>
+<dt>3. 成品号能更新小火箭吗？</dt><dd>能，更新时重新登录该账号即可；号失效就卸载后从已购项目重装。</dd>
+<dt>4. 共享号能下载小火箭吗？</dt><dd>多数共享号已购，直接下载即可；但多人共用、密码会被轮换，随时可能失效。</dd>
+<dt>5. 国区账号能买吗？</dt><dd>不能，国区 App Store 已下架 Shadowrocket，必须用美区等外区账号。</dd>
+<dt>6. 买了小火箭还需要什么？</dt><dd>还需要节点订阅（机场）。小火箭只是客户端，没有订阅无法使用。</dd>
+<dt>7. 买了不会用怎么办？</dt><dd>先在 App Store 登录下载，再导入订阅链接；具体步骤见下方主站教程。</dd>
+<dt>8. 批量买有优惠吗？</dt><dd>有，主站标价即「一件也是批发价」，量大可联系客服谈阶梯价。</dd>
+</dl></div>
+
+<h2>六、去哪买</h2>
+<div class="card">
+<p><b>已购小火箭成品独享号</b>：<a href="https://nbid666.com/products/upstream-1-6-1787508489116">美区小火箭成品号（带密保、可改密）</a> —— 登录即可在已购项目下载，24 小时异常补发。</p>
+<p><b>各区 Apple ID</b>：<a href="https://nbid666.com/products">nbid666.com 商品中心</a> —— 美区、港区、日区等现货，支持批发。</p>
+<p><b>免费共享号</b>：<a href="https://id.tangping.icu/">id.tangping.icu</a> —— 临时救急用，密码按需获取。</p>
+<p><b>完整购买指南</b>：<a href="https://nbid666.com/blog/shadowrocket-account-buy-guide">小火箭账号购买指南（主站版）</a> ·
+<a href="https://nbid666.com/blog/apple-id-buy-guide-2026">苹果 ID 购买指南</a></p>
+</div>
+
+<h2>七、相关阅读</h2>
+<ul>
+<li><a href="https://nbid666.com/blog/shadowrocket-account-buy-guide">小火箭账号购买指南：三种买法、真实成本与验号步骤</a></li>
+<li><a href="https://nbid666.com/blog/apple-id-buy-guide-2026">2026 苹果 ID 购买指南：区域、渠道与验号</a></li>
+<li><a href="https://gulliblerea.github.io/buy-guide/">苹果 ID 购买指南（GitHub 版）</a></li>
+<li><a href="https://gulliblerea.github.io/-id-/shadowrocket-price/">小火箭多少钱？三种获取方式的真实成本</a></li>
+<li><a href="https://gulliblerea.github.io/-id-/error/not-purchased/">搜索不到应用、提示需要付费怎么办</a></li>
+<li><a href="https://gulliblerea.github.io/-id-/error/locked/">提示「此 Apple ID 已被锁定」怎么办</a></li>
+</ul>
+
+<p class="foot">Newbee ID · 小火箭账号购买指南｜本页为 GitHub Pages 静态页，价格与库存以各站实时页面为准。<br>
+买卖 Apple ID 违反 Apple 服务条款，请自行评估风险；本页不提供任何账号、密码或个人信息。</p>
+
+</div>
+</body>
+</html>
