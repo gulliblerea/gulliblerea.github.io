@@ -7,12 +7,12 @@
 <p align="center">
   <a href="https://id.tangping.icu/" title="实时显示每个账号的可用状态"><img src="https://gulliblerea.github.io/-id-/assets/btn_live.png" alt="免费共享 ID · 立即取号" height="60"></a>
   <br><br>
-  <a href="https://nbid666.com/products/upstream-1-6-1787508489116" title="自带 Shadowrocket 的成品独享号，仅22元"><img src="https://gulliblerea.github.io/-id-/assets/btn_rocket.png?v=2" alt="独享小火箭 · 已购成品号" height="60"></a>
+  <a href="https://nbid666.com/products/upstream-1-6-1787508489116" title="自带 Shadowrocket 的成品独享号"><img src="https://gulliblerea.github.io/-id-/assets/btn_rocket.png?v=3" alt="独享小火箭 · 已购成品号" height="60"></a>
   <br><br>
   <a href="https://nbid666.com/products" title="美区/港区/台区/日区/韩区老号现货"><img src="https://gulliblerea.github.io/-id-/assets/btn_shopall.png" alt="各区老号 · 美港台日韩" height="60"></a>
 </p>
 
-<p align="center"><b>① 免费共享</b>　不花钱 · 多人共用　｜　<b>② 独享小火箭</b>　仅22元 · 自带成品号　｜　<b>③ 各区老号</b>　可转区 · 现货即发</p>
+<p align="center"><b>① 免费共享</b>　不花钱 · 多人共用　｜　<b>② 独享小火箭</b>　自带成品号　｜　<b>③ 各区老号</b>　可转区 · 现货即发</p>
 
 ---
 
@@ -33,7 +33,7 @@
 | 你的需求 | 该用哪个 | 直达入口 | 关键差异 |
 |---|---|---|---|
 | 只下载一次小火箭，用完就退 | 免费共享号 | [实时可用列表](https://id.tangping.icu/) | 0 元，多人共用，密码约 30 分钟轮换一次 |
-| 长期用、要给多台设备装 | 独享成品号（**仅22元**） | [自带 Shadowrocket 的成品号](https://nbid666.com/products/upstream-1-6-1787508489116) | 只有你使用，可自行改密码 |
+| 长期用、要给多台设备装 | 独享成品号 | [自带 Shadowrocket 的成品号](https://nbid666.com/products/upstream-1-6-1787508489116) | 只有你使用，可自行改密码 |
 | 要港区/台区/日区/韩区应用 | 各区老号 | [各区现货](https://nbid666.com/products) | 可转区，现货即发 |
 | 想比价、看各区实时库存 | 价格对照页 | [newbee567.top](https://newbee567.top/) | 每日自动抓取价格与可发货数量 |
 
